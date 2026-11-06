@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+* {
+    font-family: "Poppins", sans-serif;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-width: 2px;
+    border-color: oklch(0.707 0.165 254.624);
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: oklch(0.707 0.165 254.624) transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+span {
+    font-family: inherit;
+    font-weight: inherit;
+}
+
+.blueShadow {
+    box-shadow: 3px 3px 0 0 #60a5fa;
+}
+
+.blueShadow:hover {
+    transform: translate(-3px, -3px);
+    box-shadow: 6px 6px 0 0 #60a5fa;
+}
