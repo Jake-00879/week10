@@ -5,8 +5,8 @@ const Hero = () => {
     return (
         <div className={"min-h-screen flex flex-col gap-10 items-center justify-center text-center max-w-[800px] w-full mx-auto p-4"}>
             <div className={"flex flex-col gap-4 text-lg"}>
-                <p>It's time to get</p>
-                <h1 className={"uppercase font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl"}>Swole<span className={"text-blue-400"}>normous</span></h1>
+                <p>운동할 시간입니다!!</p>
+                <h1 className={"uppercase font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-7xl"}>근육<span className={"text-blue-400"}>공장</span></h1>
             </div>
             <div className={"text-sm md:text-base font-light text-left"}>
                 <span className={`text-blue-400 hover:underline cursor-pointer tooltip`}>Warning!<span className={"text-sm tooltiptext"}>Did you think this was a link?</span></span> Side effects of using this app may include:<br/>
