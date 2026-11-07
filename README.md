@@ -1,3 +1,19 @@
+1. Project Structure
+index.html은 리엑트 앱이 구동될 수 있는 하나의 TV같은 역할이다. 브라우저에서 실행이 되면 연결된 파일을 들을 불러오면서 그 내용을 body안에 있는 root에 짠하고 화면에 띄우는 역할이다.
+main.jsx는 프로그램에 적용될 css파일을 불러오고, app.jsx도 불러오고 index.html의 root를 찾아서 createRoot를 이용해서 실제 DOM에 랜더링시키는 역할을 한다.
+app.jsx는 실제로 어떻게 화면을 구성할 건지 나타낸다.
+
+2. React Component
+Hero.jsx 맨 위에 안내문구와 제목을 띄워주는 역할을 하는 component이다. 간단한 안내문구를 띄워주고 동의 및 시작버튼을 누르면 본격적으로 운동 프로그램을 설계하는 화면으로 내려간다.
+generator.jsx는 hero.jsx에서 동의 및 시작버튼을 누르고 내려가게 되면 나오는 화면으로 어떤 종류의 운동 프로그램을 원하는지(보디빌딩 식 split을 원하는지, 상체 하체로 나뉘는 2분할을 원하는지 등등), 어떤 근육 그룹의 운동을 원하는지(하체, 팔, 가슴, 등 등), 운동하는 목적이 무엇인지(스트렝스 증가, 근비대)를 선택하게 하고 마지막에 fomulate을 버튼을 누르면 목적에 맞는 운동 종목과 셋트수, 반복수, 템포 등을 설정한 운동 프로그램이 만들어지게 한다.
+
+3. Code Analysis
+const [workout, setWorkout] = useState(null)
+일반적으로 자바스크립트에서는 변수의 값을 변경하여도 그 변수를 보여주는 브라우저의 화면까지 곧 바로 바뀌지는 않는다. useState는  값이 바뀌면 리엑트가 감지해서 브라우저의 화면까지 바로 변경하게 한다.
+workout은 변수이고 setWorkout은 workout의 값을 다룰 함수이고 null은 초기값이다.
+
+
+
 # Swolenormous 💪
 **A Modern Fitness Application for Effortless Workout Planning**
 
